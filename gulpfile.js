@@ -12,6 +12,7 @@ gulp.task('watch', function() {
     ], ['less']);
 });
 
+// less
 gulp.task('less', function() {
     return gulp.src('style/less/style.less')
         .pipe(less())

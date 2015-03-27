@@ -1,13 +1,38 @@
-@golden: #f938ab;
-
+// globle setting
 body {
-	font-size: 62.5%; 
+    font-size: 62.5%;
+}
+// colors
+@golden: #dbbd2f;
+@deep_gray: #333333;
+
+.color-golden {
+    color: @golden!important;
 }
 
+// border
 .border {
 	border: solid 1px;
 }
+.text-border {
+    text-shadow: 1px 1px 2px @deep_gray, -1px -1px 2px @deep_gray;
+}
 
+// img
 .picasso {
 	background-image: url('../../img/picasso.jpg');
 }
+.blue-ball {
+    background-image: url('../img/blue-ball.png');
+    background-position: top left;
+}
+.logo {
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+
+
+
+
