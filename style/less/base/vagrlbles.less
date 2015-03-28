@@ -1,13 +1,15 @@
-// globle setting
-body {
-    font-size: 62.5%;
-}
 // colors
 @golden: #dbbd2f;
-@deep_gray: #333333;
+@deep_gray: #5C5C5C;
 
 .color-golden {
     color: @golden!important;
+}
+.color-white {
+    color: white!important;
+}
+.bg-white {
+    background-color: white!important;
 }
 
 // border
@@ -23,8 +25,8 @@ body {
 	background-image: url('../../img/picasso.jpg');
 }
 .blue-ball {
-    background-image: url('../img/blue-ball.png');
-    background-position: top left;
+    padding-top: 10%;
+    background-image: url('../../img/blue-ball.png');
 }
 .logo {
     position: relative;
@@ -32,7 +34,14 @@ body {
     left: 30px;
 }
 
-
+.title-mark {
+    position: relative;
+    top: 27px;
+    height: 5px;
+    width: 30px;
+    background-color: @deep_gray;
+    display: block;
+}
 
 
 
