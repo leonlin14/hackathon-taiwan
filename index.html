@@ -25,22 +25,46 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/css/animate.css">
     <link rel="stylesheet" href="style/css/style.css">
-
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script src="js/queryloader2.js"></script>
-    <script src="js/jquery.lwtCountdown-1.0.js"></script>
-    <script src="js/Horrus.js"></script>
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-responsive logo" src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">介紹</a></li>
+                    <li><a href="#pricing">活動</a></li>
+                    <li><a href="#portfolio">紀錄</a></li>
+                    <li><a href="#team">夥伴</a></li>
+                    <li><a href="#features">理念</a></li>
+                    <li><a href="#sponsor">贊助</a></li>
+                    <li><a href="#contact-us">聯絡</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
     <!-- Container -->
     <div class="container">
         <!-- Section 1 -->
-        <div class="row text-border">
+        <div class="row text-border frame">
             <div class="col-md-12 cover-banner picasso">
-                <img class="img-responsive logo" src="img/logo.png" alt="">
-
                 <!-- Title -->
                 <div class="row top-title">
                     <div class="col-md-6 col-md-offset-1">
@@ -131,8 +155,8 @@
         </div><!-- /Section 1 -->
 
         <!-- Section 2 -->
-        <div class="row">
-            <div class="col-md-12 contain-banner blue-ball">
+        <div class="row frame">
+            <div class="col-md-12 contain-banner blue-ball" id="about">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-1 bg-white">
                         <div class="row">
@@ -177,8 +201,8 @@
         </div><!-- /Section 2 -->
 
         <!-- Section 3 -->
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 pricing-items">
+        <div class="row frame">
+            <div class="col-md-10 col-md-offset-1 pricing-items" id="pricing">
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="text-center">近期 <span class="color-golden">黑客松</span> 活動報名</h2>
@@ -256,7 +280,7 @@
         </div><!-- /Section 3 -->
 
         <!-- Section 4 -->
-        <div class="row">
+        <div class="row frame">
             <div class="col-md-10 col-md-offset-1 schedule">
                 <div class="row">
                     <div class="col-md-6">
@@ -295,7 +319,7 @@
         </div><!-- /Section 4 -->
 
         <!-- Section 5 -->
-        <div class="row">
+        <div class="row frame frame-bottom">
             <div id="portfolio" class="col-md-10 col-md-offset-1 pictures">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -370,7 +394,7 @@
 
         <!-- Section 6 -->
         <div class="row">
-            <div id="portfolio" class="col-md-10 col-md-offset-1 team">
+            <div class="col-md-10 col-md-offset-1 team" id="team">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>感謝合作夥伴們的力挺</h2>
@@ -442,7 +466,7 @@
 
         <!-- Section 7 -->
         <div class="row">
-            <div class="col-md-10 col-md-offset-1 features">
+            <div class="col-md-10 col-md-offset-1 features" id="features">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>我們的理念</h2>
@@ -467,7 +491,7 @@
 
         <!-- Section 8 -->
         <div class="row">
-            <div class="col-md-10 col-md-offset-1 sponsor">
+            <div class="col-md-10 col-md-offset-1 sponsor" id="sponsor">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h1><i class="fa fa-caret-down"></i></h1>
@@ -563,7 +587,7 @@
 
         <!-- Footer -->
         <div class="row">
-            <div class="col-md-12 footer color-white">
+            <div class="col-md-12 footer color-white" id="contact-us">
                 <div class="row">
                     <div class="col-lg-12">
                         <h3 class="color-white">歡迎隨時與我們聯繫</h3>
@@ -749,6 +773,12 @@
         </div>
     </div>
 
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script src="js/queryloader2.js"></script>
+    <script src="js/jquery.lwtCountdown-1.0.js"></script>
+    <script src="js/Horrus.js"></script>
+    <script src="js/nav-scroll.js"></script>
   </body>
 </html>

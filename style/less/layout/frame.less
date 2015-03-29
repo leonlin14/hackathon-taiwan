@@ -1,7 +1,14 @@
-.frame {
-    margin: 1%;
+.frame-base(@hide_width: 0) {
     border-color: @golden;
     border-style: solid;
-    border-width: 80px 10px 10px 10px;
-    width: 98%;
+    border-top-width: 0;
+    border-bottom-width: @hide_width;
+    border-left-width: 12px;
+    border-right-width: 12px;
+}
+.frame {
+    .frame-base
+}
+.frame-bottom {
+    .frame-base(12px)
 }
