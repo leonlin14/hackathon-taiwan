@@ -1,3 +1,8 @@
+// screen size
+@screen-sm-min: 767px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
 // colors
 @golden: #dbbd2f;
 @deep_gray: #35363d;
@@ -62,5 +67,10 @@ body {
     display: block;
 }
 
-
+@media (max-width: @screen-sm-min) {
+    .logo {
+        position: absolute;
+        left: 35%;
+    }
+}
 
